@@ -17,7 +17,7 @@ public class MainActivity_appliFredi extends Activity {
         
         final Button btnValider = (Button) findViewById(R.id.btnValider);
         btnValider.setOnClickListener(new View.OnClickListener() {
-        	// ajout ligne test 2 
+        	
         @Override
         public void onClick(View v) {
           Intent intent = new Intent(MainActivity_appliFredi.this, passageVue.class);
