@@ -16,5 +16,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <color name="rouge">#F70010</color>
+    <dimen name="dimension1">35px</dimen>
 
 </resources>

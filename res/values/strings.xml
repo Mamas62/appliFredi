@@ -4,5 +4,9 @@
     <string name="app_name">appliFredi</string>
     <string name="hello_world">Hello world!</string>
     <string name="titre">Application frais déplacement</string>
+    <string name="nom">Nom : </string>
+    <string name="prenom">Prenom : </string>
+    <string name="adresse">Adresse :</string>
+    <string name="valider">Valider</string>
 
 </resources>
