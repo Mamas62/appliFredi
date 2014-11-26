@@ -24,6 +24,10 @@
         </activity>
         <activity android:name=".passageVue" />
         <activity android:name=".pagecreationfraisdeplacement" />
+        <activity
+            android:name=".Simulation"
+            android:label="@string/title_activity_simulation" >
+        </activity>
     </application>
 
 </manifest>

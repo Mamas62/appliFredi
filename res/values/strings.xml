@@ -8,5 +8,6 @@
     <string name="prenom">Prenom : </string>
     <string name="adresse">Adresse :</string>
     <string name="valider">Valider</string>
-
+    
+    <string name="title_activity_simulation">Simulation</string>
 </resources>
