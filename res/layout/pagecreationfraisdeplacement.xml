@@ -1,8 +1,162 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/Associationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="Association" />
+
+    <EditText
+        android:id="@+id/AssociationEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Associationtxt"
+        android:layout_alignBottom="@+id/Associationtxt"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NbRepastxt"
+        android:layout_below="@+id/AssociationEdit"
+        android:layout_marginTop="32dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/DateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Datetxt"
+        android:layout_alignBottom="@+id/Datetxt"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/Motiftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/DateEdit"
+        android:layout_marginTop="22dp"
+        android:text="Motif" />
+
+    <EditText
+        android:id="@+id/MotifEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Motiftxt"
+        android:layout_alignBottom="@+id/Motiftxt"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/Intituletrajettxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MotifEdit"
+        android:layout_marginTop="26dp"
+        android:text="Intitulé trajet" />
+
+    <EditText
+        android:id="@+id/IntituleTrajetEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Intituletrajettxt"
+        android:layout_alignBottom="@+id/Intituletrajettxt"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/Nbkmtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Nb km" />
+
+    <EditText
+        android:id="@+id/NbKmNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Nbkmtxt"
+        android:layout_alignBottom="@+id/Nbkmtxt"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/MtPeagetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/NbKmNumber"
+        android:layout_marginTop="26dp"
+        android:text="Montant péage" />
+
+    <EditText
+        android:id="@+id/MtPeageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/MtPeagetxt"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/NbRepastxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MtPeageNumber"
+        android:layout_marginTop="31dp"
+        android:text="Nb de repas" />
+
+    <EditText
+        android:id="@+id/NbRepasNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NbRepastxt"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/NbNuiteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnregistrer"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/NbNuitetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NbNuiteNumber"
+        android:layout_alignBottom="@+id/NbNuiteNumber"
+        android:layout_alignParentLeft="true"
+        android:text="Nb de nuités" />
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NbNuiteNumber"
+        android:layout_alignParentBottom="true"
+        android:text="Enregistrer" />
+
+</RelativeLayout>
