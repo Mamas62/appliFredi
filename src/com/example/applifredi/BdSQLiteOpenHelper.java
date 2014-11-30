@@ -6,12 +6,12 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class BdSQLiteOpenHelper extends SQLiteOpenHelper {
-	private String requeteCreation = "CREATE TABLE utilisateur("
+	private String creationTable1 = "CREATE TABLE utilisateur("
 			+ "_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"
 			+ "nom TEXT NOT NULL," + "prenom TEXT NOT NULL,"
 			+ "adresse TEXT NOT NULL);";
 
-	private String requeteCreation2 = "CREATE TABLE deplacement("
+	private String creationTable2 = "CREATE TABLE deplacement("
 			+ "_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"
 			+ "date TEXT NOT NULL," + "motif TEXT NOT NULL,"
 			+ "intitule TEXT NOT NULL," + "nbKm DOUBLE NOT NULL,"
@@ -26,8 +26,8 @@ public class BdSQLiteOpenHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		db.execSQL(requeteCreation);
-		db.execSQL(requeteCreation2);
+		db.execSQL(creationTable1);
+		db.execSQL(creationTable2);
 
 
 	}
