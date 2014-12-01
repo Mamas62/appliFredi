@@ -13,7 +13,7 @@ public class BdSQLiteOpenHelper extends SQLiteOpenHelper {
 
 	private String creationTable2 = "CREATE TABLE deplacement("
 			+ "_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"
-			+ "date TEXT NOT NULL," + "motif TEXT NOT NULL,"
+			+ "date DATE NOT NULL," + "motif TEXT NOT NULL,"
 			+ "intitule TEXT NOT NULL," + "nbKm DOUBLE NOT NULL,"
 			+ "montantPeage DOUBLE NOT NULL" + "nbRepas INTEGER NOT NULL"
 			+ "nbNuites INTEGER NOT NULL);";

@@ -28,7 +28,7 @@ public class MainActivity_appliFredi extends Activity {
         	EditText edtPrenom = (EditText)findViewById(R.id.editPeage);
         	EditText edtAdresse = (EditText)findViewById(R.id.editRepas);
         	
-        	accesseurs utilisateur = new accesseurs(edtNom.getText().toString(), edtPrenom.getText().toString(), edtAdresse.getText().toString());
+        	accesseursUtilisateur utilisateur = new accesseursUtilisateur(edtNom.getText().toString(), edtPrenom.getText().toString(), edtAdresse.getText().toString());
         	manipBDD.addUtilisateur(utilisateur);
         	
         	Intent intent = new Intent(MainActivity_appliFredi.this, passageVue.class);

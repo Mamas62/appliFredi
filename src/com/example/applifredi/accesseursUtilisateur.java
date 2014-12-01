@@ -1,11 +1,11 @@
 package com.example.applifredi;
 
-public class accesseurs {
+public class accesseursUtilisateur {
 
 	private double id;
 	private String nom, prenom, adresse;
 	
-	public accesseurs(String nom,String prenom,String adresse){
+	public accesseursUtilisateur(String nom,String prenom,String adresse){
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
