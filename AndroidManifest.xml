@@ -28,6 +28,10 @@
             android:name=".Simulation"
             android:label="@string/title_activity_simulation" >
         </activity>
+        <activity
+            android:name=".MainActivity_simulation"
+            android:label="@string/title_activity_main_activity_simulation" >
+        </activity>
     </application>
 
 </manifest>
