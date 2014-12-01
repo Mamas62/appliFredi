@@ -13,7 +13,7 @@ public class accesBD{
 		accessBDD = new BdSQLiteOpenHelper(context,"bddtest",null,1);
 		
 	}
-	public void addViticulteur1(constructeurs unAccesBD){
+	public void addViticulteur1(accesseurs unAccesBD){
 		SQLiteDatabase bdd = accessBDD.getWritableDatabase();
 		String req="INSERT INTO utilisateur(nom,prenom,adresse)" +
 				" VALUES('"+unAccesBD.getNom()+"'" +
@@ -24,12 +24,12 @@ public class accesBD{
 		bdd.close();
 	}
 
-	public constructeurs getUtilisateur(){
-		constructeurs unAccesBD = null;
+	public accesseurs getUtilisateur(){
+		accesseurs unAccesBD = null;
 		Cursor curseur = accessBDD.getReadableDatabase().rawQuery("SELECT * FROM utilisateur",null);
 		if(curseur.getCount()>0){
 			curseur.moveToFirst();
-			unAccesBD = new constructeurs(curseur.getLong(0),curseur.getString(1),curseur.getString(2),curseur.getString(3));
+			unAccesBD = new accesseurs(curseur.getLong(0),curseur.getString(1),curseur.getString(2),curseur.getString(3));
 			
 		}
 	
