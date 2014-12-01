@@ -10,5 +10,6 @@
     <string name="valider">Valider</string>
     <string name="title_activity_simulation">Simulation</string>
     <string name="title_activity_main_activity_simulation">MainActivity_simulation</string>
+    <string name="title_activity_main_activity_historique">MainActivity_historique</string>
 
 </resources>

@@ -32,6 +32,10 @@
             android:name=".MainActivity_simulation"
             android:label="@string/title_activity_main_activity_simulation" >
         </activity>
+        <activity
+            android:name=".MainActivity_historique"
+            android:label="@string/title_activity_main_activity_historique" >
+        </activity>
     </application>
 
 </manifest>
