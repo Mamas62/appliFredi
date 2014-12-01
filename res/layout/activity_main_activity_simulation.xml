@@ -46,7 +46,7 @@
         android:text="@string/kmEffectues" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editKmEffectues"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tarifText"
@@ -56,7 +56,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editPeage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView4"
@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/editKmEffectues"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="22dp"
         android:text="@string/peage" />
@@ -83,11 +83,11 @@
         android:text="@string/repas" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editRepas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignLeft="@+id/editPeage"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -101,30 +101,48 @@
         android:text="@string/nuitee" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editNuitee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView6"
-        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignLeft="@+id/editRepas"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnNouvelleSimulation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignBottom="@+id/btnSimulation"
+        android:layout_alignLeft="@+id/editKmEffectues"
         android:layout_marginLeft="52dp"
         android:text="@string/nouvelle_simulation" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnSimulation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView6"
         android:layout_marginTop="56dp"
-        android:layout_toLeftOf="@+id/editText4"
+        android:layout_toLeftOf="@+id/editNuitee"
         android:text="@string/simulation" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:text="@string/resultat" />
+
+    <EditText
+        android:id="@+id/editResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/editKmEffectues"
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
 </RelativeLayout>
