@@ -2,5 +2,10 @@
 <resources>
     <string name="tarif">tarif kilometrique</string>
     <string name="simulation">Simulation</string>
+    <string name="kmEffectues">kilometre effectues</string>
+    <string name="peage">Péage</string>
+    <string name="repas">repas</string>
+    <string name="nuitee">nuitée</string>
+    <string name="nouvelle_simulation">nouvelle simulation</string>
     
 </resources>
