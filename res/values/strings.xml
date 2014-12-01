@@ -12,5 +12,6 @@
     <string name="title_activity_main_activity_simulation">MainActivity_simulation</string>
     <string name="title_activity_main_activity_historique">MainActivity_historique</string>
     <string name="title_activity_main_activity_pagecreationfraisdeplacement">MainActivity_pagecreationfraisdeplacement</string>
+    <string name="title_activity_main_activity_modification">MainActivity_modification</string>
 
 </resources>

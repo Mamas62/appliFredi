@@ -40,6 +40,10 @@
             android:name=".MainActivity_pagecreationfraisdeplacement"
             android:label="@string/title_activity_main_activity_pagecreationfraisdeplacement" >
         </activity>
+        <activity
+            android:name=".MainActivity_modification"
+            android:label="@string/title_activity_main_activity_modification" >
+        </activity>
     </application>
 
 </manifest>
