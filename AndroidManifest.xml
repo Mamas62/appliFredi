@@ -36,6 +36,10 @@
             android:name=".MainActivity_historique"
             android:label="@string/title_activity_main_activity_historique" >
         </activity>
+        <activity
+            android:name=".MainActivity_pagecreationfraisdeplacement"
+            android:label="@string/title_activity_main_activity_pagecreationfraisdeplacement" >
+        </activity>
     </application>
 
 </manifest>
