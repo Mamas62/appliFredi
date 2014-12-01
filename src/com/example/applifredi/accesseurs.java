@@ -5,8 +5,7 @@ public class accesseurs {
 	private double id;
 	private String nom, prenom, adresse;
 	
-	public accesseurs(double id,String nom,String prenom,String adresse){
-		this.id = id;
+	public accesseurs(String nom,String prenom,String adresse){
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;

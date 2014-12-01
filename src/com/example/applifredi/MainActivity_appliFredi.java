@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity_appliFredi extends Activity {
 
@@ -20,7 +20,18 @@ public class MainActivity_appliFredi extends Activity {
         	
         @Override
         public void onClick(View v) {
-          Intent intent = new Intent(MainActivity_appliFredi.this, passageVue.class);
+        	
+        	// SAUVEGARDER INFOS
+        	accesBD manipBDD = new accesBD(MainActivity_appliFredi.this);
+        	
+        	EditText edtNom = (EditText)findViewById(R.id.editText1);
+        	EditText edtPrenom = (EditText)findViewById(R.id.editText2);
+        	EditText edtAdresse = (EditText)findViewById(R.id.editText3);
+        	
+        	accesseurs utilisateur = new accesseurs(edtNom.getText().toString(), edtPrenom.getText().toString(), edtAdresse.getText().toString());
+        	manipBDD.addUtilisateur(utilisateur);
+        	
+        	Intent intent = new Intent(MainActivity_appliFredi.this, passageVue.class);
           startActivity(intent);
           }
         });
