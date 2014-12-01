@@ -15,6 +15,7 @@ public class MainActivity_simulation extends Activity {
 	private EditText editNuitee = null;
 	private EditText editResultat = null;
 	private Button btnSimulation = null;
+	private Button btnNouvelleSimulation = null;
 	
 
 	@Override
@@ -50,6 +51,24 @@ public class MainActivity_simulation extends Activity {
 				Double resultat = tarif*kmEffectues+peage+repas+nuitee;
 				String resultatString = resultat.toString();
 				editResultat.setText(resultatString);
+				
+			}
+			
+			
+		});
+		
+		btnNouvelleSimulation = (Button)findViewById(R.id.btnNouvelleSimulation);
+		btnNouvelleSimulation.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				tarifText.setText("");
+				editKmEffectues.setText("");
+				editPeage.setText("");
+				editRepas.setText("");
+				editNuitee.setText("");
+				editResultat.setText("");
+				
 				
 			}
 		});
