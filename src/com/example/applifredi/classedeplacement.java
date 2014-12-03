@@ -61,4 +61,16 @@ public class classedeplacement {
     public void setTitreTrajet (String TitreTrajet){
     	this.titreTrajet=TitreTrajet;
     }
+    public void setNbKm (double NbKm){
+    	this.nbKm=NbKm;
+    }
+    public void setPeage(double peage){
+    	this.montantPeage=peage;
+    }
+    public void setRepas (int repas){
+    	this.nbRepas=repas;
+    }
+    public void setNuites (int nuit){
+    	this.nbNuites=nuit;
+    }
 }
