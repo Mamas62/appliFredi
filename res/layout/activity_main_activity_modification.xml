@@ -129,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/txtVMotif"
         android:layout_alignBottom="@+id/txtVMotif"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignLeft="@+id/editKmEffectues"
         android:layout_alignParentRight="true"
         android:ems="10" />
 
@@ -147,7 +147,7 @@
         android:id="@+id/edtNbKm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignLeft="@+id/editPeage"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:ems="10"
