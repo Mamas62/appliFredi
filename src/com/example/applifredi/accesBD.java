@@ -36,5 +36,17 @@ public class accesBD{
 		return unAccesBD;
 	}
 	
+	public classedeplacement getDeplacement(long id){
+		classedeplacement unAccesBD = null;
+		Cursor curseur = accessBDD.getReadableDatabase().rawQuery("SELECT * FROM deplacement WHERE _id = ?", new String[] {String.valueOf(id)});
+		if(curseur.getCount()>0){
+			curseur.moveToFirst();
+			unAccesBD = new classedeplacement(curseur.getString(0),curseur.getString(1),curseur.getString(2),curseur.getDouble(3),curseur.getDouble(4),curseur.getInt(5),curseur.getInt(6),curseur.getInt(7),curseur.getInt(8),curseur.getInt(9));
+			
+		}
+	
+		return unAccesBD;
+	}
+	
 	
 }
