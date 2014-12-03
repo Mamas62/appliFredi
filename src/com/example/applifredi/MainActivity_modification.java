@@ -32,7 +32,7 @@ public class MainActivity_modification extends Activity {
 	        	EditText edtRepas = (EditText)findViewById(R.id.edtRepas);
 	        	EditText edtNuitee = (EditText)findViewById(R.id.edtNuitee);
 	        	
-	        	
+	      //  	classedeplacement deplacement = new classedeplacement (string );	        	//manipBDD.addUtilisateur(deplacement);
 
 	        	
 				

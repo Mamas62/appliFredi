@@ -173,7 +173,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/edtDate1"
+        android:id="@+id/edtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/txtVDate"
