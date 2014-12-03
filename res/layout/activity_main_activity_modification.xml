@@ -111,19 +111,6 @@
         android:ems="10" />
 
     <EditText
-        android:id="@+id/edtDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txtVMotif"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/txtVNbKm"
-        android:ems="10"
-        android:inputType="date" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
         android:id="@+id/edtMotif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -184,5 +171,15 @@
         android:layout_alignParentRight="true"
         android:ems="10"
         android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtVDate"
+        android:layout_alignBottom="@+id/txtVDate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/txtVNbKm"
+        android:ems="10" />
 
 </RelativeLayout>
