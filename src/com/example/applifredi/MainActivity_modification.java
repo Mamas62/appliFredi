@@ -34,8 +34,7 @@ public class MainActivity_modification extends Activity {
 	        	
 	        	
 
-	        	classedeplacement utilisateur = new classedeplacement(edtAsso.getText().toString(), edtDate.getText().toString(), edtMotif.getText().toString(),edtTrajet.getText().toString(), edtNbKm.getText().toString(), edtPeage.getText().toString(),edtRepas.getText().toString(), edtNuitee.getText().toString());
-	        	manipBDD.addUtilisateur(utilisateur);
+	        	
 				
 			}	  
 });
