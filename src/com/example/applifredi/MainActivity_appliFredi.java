@@ -24,9 +24,9 @@ public class MainActivity_appliFredi extends Activity {
         	// SAUVEGARDER INFOS
         	accesBD manipBDD = new accesBD(MainActivity_appliFredi.this);
         	
-        	EditText edtNom = (EditText)findViewById(R.id.editKmEffectues);
-        	EditText edtPrenom = (EditText)findViewById(R.id.editPeage);
-        	EditText edtAdresse = (EditText)findViewById(R.id.editRepas);
+        	EditText edtNom = (EditText)findViewById(R.id.nom);
+        	EditText edtPrenom = (EditText)findViewById(R.id.prenom);
+        	EditText edtAdresse = (EditText)findViewById(R.id.adresse);
         	
         	accesseursUtilisateur utilisateur = new accesseursUtilisateur(edtNom.getText().toString(), edtPrenom.getText().toString(), edtAdresse.getText().toString());
         	manipBDD.addUtilisateur(utilisateur);

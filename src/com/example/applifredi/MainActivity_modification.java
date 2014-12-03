@@ -31,8 +31,10 @@ public class MainActivity_modification extends Activity {
 	        	EditText edtPeage = (EditText)findViewById(R.id.edtPeage);
 	        	EditText edtRepas = (EditText)findViewById(R.id.edtRepas);
 	        	EditText edtNuitee = (EditText)findViewById(R.id.edtNuitee);
+	        	
+	        	
 
-	        	accesseurs utilisateur = new accesseurs(edtAsso.getText().toString(), edtDate.getDate().toString(), edtMotif.getText().toString(),edtTrajet.getText().toString(), edtNbKm.getText().toString(), edtPeage.getText().toString(),edtRepas.getText().toString(), edtNuitee.getText().toString());
+	        	classedeplacement utilisateur = new classedeplacement(edtAsso.getText().toString(), edtDate.getText().toString(), edtMotif.getText().toString(),edtTrajet.getText().toString(), edtNbKm.getText().toString(), edtPeage.getText().toString(),edtRepas.getText().toString(), edtNuitee.getText().toString());
 	        	manipBDD.addUtilisateur(utilisateur);
 				
 			}	  

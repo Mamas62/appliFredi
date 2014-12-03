@@ -7,13 +7,14 @@ import android.R.string;
 public class classedeplacement {
 	
 	private String association, motif,titreTrajet;
-	private Date date;
 	private double nbKm,montantPeage;
-	private int nbRepas,nbNuites;
+	private int nbRepas,nbNuites,jour,mois,annee;
 	
-	public classedeplacement (String association,Date date,String Motif,String titreTrajet,Double nbKm,Double montantPeage,Integer nbRepas,Integer nbNuites){
+	public classedeplacement (String association,String Motif,String titreTrajet,Double nbKm,Double montantPeage,Integer nbRepas,Integer nbNuites,Integer jour,Integer mois,Integer annee){
 	this.association= association;
-	this.date=date;
+	this.jour=jour;
+	this.mois=mois;
+	this.annee=annee;
 	this.motif= Motif;
 	this.titreTrajet= titreTrajet;
 	this.nbKm=nbKm;
@@ -27,8 +28,14 @@ public class classedeplacement {
 		return this.association;
 		
 	}
-    public Date getDate(){
-    	return this.date;
+    public int getJour(){
+    	return this.jour;
+    }
+    public int getMois(){
+    	return this.mois;
+    }
+    public int getAnnee(){
+    	return this.annee;
     }
     public String getMotif (){
     	return this.motif;
@@ -52,9 +59,6 @@ public class classedeplacement {
     public void setAssociation(String association){
     	this.association=association;
     }
-    public void setDate (Date date){
-    	this.date=date;
-    }
     public void setMotif (String motif){
     	this.motif=motif;
     }
@@ -72,5 +76,14 @@ public class classedeplacement {
     }
     public void setNuites (int nuit){
     	this.nbNuites=nuit;
+    }
+    public void setJour (int jour){
+    	this.jour=jour;
+    }
+    public void setMois (int mois){
+    	this.mois=mois;
+    }
+    public void setAnnee (int annee){
+    	this.annee=annee;
     }
 }
