@@ -19,7 +19,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tarifText"
+        android:layout_alignBottom="@+id/nom"
         android:layout_alignParentLeft="true"
         android:text="@string/nom" />
 
@@ -27,7 +27,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editPeage"
+        android:layout_alignBottom="@+id/prenom"
         android:layout_alignParentLeft="true"
         android:text="@string/prenom" />
 
@@ -35,34 +35,34 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editRepas"
+        android:layout_alignBottom="@+id/adresse"
         android:layout_alignParentLeft="true"
         android:text="@string/adresse" />
 
     <EditText
-        android:id="@+id/editRepas"
+        android:id="@+id/adresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editPeage"
+        android:layout_alignLeft="@+id/prenom"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="102dp"
         android:ems="10"
         android:inputType="textPostalAddress" />
 
     <EditText
-        android:id="@+id/editPeage"
+        android:id="@+id/prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tarifText"
+        android:layout_alignLeft="@+id/nom"
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/tarifText"
+        android:id="@+id/nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editPeage"
+        android:layout_above="@+id/prenom"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="63dp"
         android:layout_marginRight="15dp"
