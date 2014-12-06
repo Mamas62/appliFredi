@@ -1,9 +1,5 @@
 package com.example.applifredi;
 
-import java.sql.Date;
-
-import android.R.string;
-
 public class classedeplacement {
 	
 	private String association, motif,titreTrajet,date;
@@ -24,7 +20,10 @@ public class classedeplacement {
 	
 	public String getAssociation() {
 		return this.association;
-		
+   
+	}
+	public String getDate() {
+			return this.date;
 	}
   public String getMotif (){
     	return this.motif;
@@ -47,6 +46,9 @@ public class classedeplacement {
     //Modificateurs 
     public void setAssociation(String association){
     	this.association=association;
+    }
+    public void setDate(String date){
+    	this.date=date;
     }
     public void setMotif (String motif){
     	this.motif=motif;
