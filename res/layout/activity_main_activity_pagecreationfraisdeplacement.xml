@@ -4,17 +4,8 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:id="@+id/Associationtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="36dp"
-        android:text="Association" />
-
     <EditText
-        android:id="@+id/AssociationEdit"
+        android:id="@+id/Association"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Associationtxt"
@@ -25,17 +16,8 @@
         <requestFocus />
     </EditText>
 
-    <TextView
-        android:id="@+id/Datetxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/NbRepastxt"
-        android:layout_below="@+id/AssociationEdit"
-        android:layout_marginTop="32dp"
-        android:text="Date" />
-
     <EditText
-        android:id="@+id/DateEdit"
+        android:id="@+id/Date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Datetxt"
@@ -44,17 +26,8 @@
         android:ems="10"
         android:inputType="date" />
 
-    <TextView
-        android:id="@+id/Motiftxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/DateEdit"
-        android:layout_marginTop="22dp"
-        android:text="Motif" />
-
     <EditText
-        android:id="@+id/MotifEdit"
+        android:id="@+id/Motif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Motiftxt"
@@ -62,17 +35,8 @@
         android:layout_alignParentRight="true"
         android:ems="10" />
 
-    <TextView
-        android:id="@+id/Intituletrajettxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/MotifEdit"
-        android:layout_marginTop="26dp"
-        android:text="Intitulé trajet" />
-
     <EditText
-        android:id="@+id/IntituleTrajetEdit"
+        android:id="@+id/IntituleTrajet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Intituletrajettxt"
@@ -159,5 +123,41 @@
         android:layout_alignLeft="@+id/NbNuiteNumber"
         android:layout_alignParentBottom="true"
         android:text="Enregistrer" />
+
+    <TextView
+        android:id="@+id/Intituletrajettxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NbKmNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:text="Intitulé trajet" />
+
+    <TextView
+        android:id="@+id/Motiftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/IntituleTrajet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:text="Motif" />
+
+    <TextView
+        android:id="@+id/Datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Motif"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/Associationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp"
+        android:text="Association" />
 
 </RelativeLayout>
