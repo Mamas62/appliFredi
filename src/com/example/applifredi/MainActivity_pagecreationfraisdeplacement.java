@@ -34,6 +34,7 @@ public class MainActivity_pagecreationfraisdeplacement extends Activity {
 		        	EditText edtNuitee = (EditText)findViewById(R.id.edtNuitee);
 					
 		        	classedeplacement deplacement = new classedeplacement(edtAsso.getText().toString(),edtDate.getText().toString(),edtMotif.getText().toString(),edtTrajet.getText().toString(),Double.parseDouble(edtNbKm.getText().toString()),Double.parseDouble(edtPeage.getText().toString()),Integer.parseInt(edtRepas.getText().toString()),Integer.parseInt(edtNuitee.getText().toString()));
+		        	manipBDD.addDeplacement(deplacement);
 		        	Intent intent = new Intent(MainActivity_pagecreationfraisdeplacement.this, passageVue.class);
 		            startActivity(intent);
 				}
