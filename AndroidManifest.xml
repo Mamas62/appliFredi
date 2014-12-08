@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".passageVue" />
-        <activity android:name=".pagecreationfraisdeplacement" />
+        <activity android:name=".passageVueVerspagecreationfraisdeplacement" />
         <activity
             android:name=".Simulation"
             android:label="@string/title_activity_simulation" >
@@ -43,6 +43,14 @@
         <activity
             android:name=".MainActivity_modification"
             android:label="@string/title_activity_main_activity_modification" >
+        </activity>
+        <activity
+            android:name=".MainActivity_menu"
+            android:label="@string/title_activity_main_activity_menu" >
+        </activity>
+        <activity
+            android:name=".test"
+            android:label="@string/title_activity_test" >
         </activity>
     </application>
 

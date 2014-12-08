@@ -13,5 +13,11 @@
     <string name="title_activity_main_activity_historique">MainActivity_historique</string>
     <string name="title_activity_main_activity_pagecreationfraisdeplacement">MainActivity_pagecreationfraisdeplacement</string>
     <string name="title_activity_main_activity_modification">MainActivity_modification</string>
+    <string name="title_activity_main_activity_menu">MainActivity_menu</string>
+    <string name="titre2">Menu - FREDI</string>
+    <string name="ajouterundeplacement">Ajouter un déplacement</string>
+    <string name="historiquemodification">Historique / Modification</string>
+    <string name="simulation">Simulation</string>
+    <string name="title_activity_test">TEST</string>
 
 </resources>
