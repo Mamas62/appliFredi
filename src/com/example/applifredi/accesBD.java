@@ -4,12 +4,14 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 public class accesBD{
 	
 	private BdSQLiteOpenHelper accessBDD;
+	private SQLiteDatabase bdd;
 	
 	public accesBD(Context context){
 		accessBDD = new BdSQLiteOpenHelper(context,"bddtest",null,1);
@@ -17,7 +19,15 @@ public class accesBD{
 	}
 	
 	public void open() throws SQLException {
-		bdd = BdSQLiteOpenHelper.getWritableDatabase();
+		bdd = accessBDD.getWritableDatabase();
+	}
+	
+	public void close() {
+		// Cette ligne permet d'effacer le contenu de la table association.
+		// A utiliser uniquement pour debug.
+		// "TRUNCATE TABLE" n'existe pas sous SQLite (d'où DELETE FROM sans WHERE)
+		//bdd.execSQL("DELETE FROM association;");
+		accessBDD.close();
 	}
 	
 	public void addUtilisateur(accesseursUtilisateur unAccesBD){
