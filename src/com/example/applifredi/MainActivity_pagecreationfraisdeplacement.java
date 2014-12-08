@@ -1,6 +1,7 @@
 package com.example.applifredi;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,11 +34,19 @@ public class MainActivity_pagecreationfraisdeplacement extends Activity {
 		        	EditText edtNuitee = (EditText)findViewById(R.id.edtNuitee);
 					
 		        	classedeplacement deplacement = new classedeplacement(edtAsso.getText().toString(),edtDate.getText().toString(),edtMotif.getText().toString(),edtTrajet.getText().toString(),Double.parseDouble(edtNbKm.getText().toString()),Double.parseDouble(edtPeage.getText().toString()),Integer.parseInt(edtRepas.getText().toString()),Integer.parseInt(edtNuitee.getText().toString()));
+		        	Intent intent = new Intent(MainActivity_pagecreationfraisdeplacement.this, passageVue.class);
+		            startActivity(intent);
 				}
 	        	
 	        	
 	        });
 	        }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        //getMenuInflater().inflate(R.menu.main, menu);
+        return true;
 	}
+}
 
 
