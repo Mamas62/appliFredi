@@ -13,6 +13,7 @@ public class passageVue extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_menu);
         
+        // AJOUTER UN DEPLACEMENT
         final Button btnAjouter = (Button) findViewById(R.id.btnAjouterDsmenu);
         btnAjouter.setOnClickListener(new View.OnClickListener() {
         	
@@ -23,6 +24,20 @@ public class passageVue extends Activity {
           startActivity(intent);
           }
         });
+        // FIN AJOUTER UN DEPLACEMENT
+        
+     // HISTORIQUE / MODIFICATION
+        final Button btnHistorique = (Button) findViewById(R.id.btnHistorique);
+        btnHistorique.setOnClickListener(new View.OnClickListener() {
+        	
+        @Override
+        public void onClick(View v) {
+        	       	
+        	Intent intent = new Intent(passageVue.this, passageVueVersHistorique.class);
+          startActivity(intent);
+          }
+        });
+        // FIN HISTORIQUE / MODIFICATION
     }
  
    /* @Override

@@ -52,6 +52,7 @@
             android:name=".test"
             android:label="@string/title_activity_test" >
         </activity>
+        <activity android:name=".passageVueVersHistorique"></activity>
     </application>
 
 </manifest>
