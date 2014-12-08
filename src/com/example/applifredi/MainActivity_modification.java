@@ -35,7 +35,7 @@ public class MainActivity_modification extends Activity {
 	        	
 	        	classedeplacement deplacement = new classedeplacement(edtAsso.getText().toString(),edtDate.getText().toString(),edtMotif.getText().toString(),edtTrajet.getText().toString(),Double.parseDouble(edtNbKm.getText().toString()),Double.parseDouble(edtPeage.getText().toString()),Integer.parseInt(edtRepas.getText().toString()),Integer.parseInt(edtNuitee.getText().toString()));
 
-	        	Intent intent = new Intent(MainActivity_modification.this, passageVue.class);
+	        	Intent intent = new Intent(MainActivity_modification.this, passageModifaHistorique.class);
 	            startActivity(intent);
 				
 			}	  
