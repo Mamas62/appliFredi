@@ -1,20 +1,36 @@
 package com.example.applifredi;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity_historique extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main_activity_historique);
+		setContentView(R.layoutlistViewAssociations.activity_main_activity_historique);
 		
 		accesBD manipBDD = new accesBD(this);
-		classedeplacement deplacement = manipBDD.getDeplacement(1);
+		ArrayList<classedeplacement> deplacements = manipBDD.getDeplacements();
 		
-		TextView txtTest = (TextView)findViewById(R.id.txtTest);
-		txtTest.setText(deplacement.getTitreTrajet());
+		// Initialisation de la liste d'affichage, mise à jour de son contenu, affichage et paramétrage menu contextuel
+				ListView listViewAssociations = (ListView)findViewById(R.id.listViewAssociations);
+				manipBDD = new accesBD(this);
+				miseAJourListe();
+				listeAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listeAssociationsAffichage);
+				listViewAssociations.setAdapter(listeAdapter);
+				
+				private void miseAJourListe() {
+					// On récupère toutes les associations et on prépare la liste d'affichage
+					manipBDD.open();
+					listeAssociations = manipBDD.getAllAssociations();
+					manipBDD.close();
+					for (Association uneAssociation : listeAssociations)
+						listeAssociationsAffichage.add(uneAssociation.getNom());
+				}
 	}
 }

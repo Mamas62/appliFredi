@@ -15,6 +15,11 @@ public class accesBD{
 		accessBDD = new BdSQLiteOpenHelper(context,"bddtest",null,1);
 		
 	}
+	
+	public void open() throws SQLException {
+		bdd = BdSQLiteOpenHelper.getWritableDatabase();
+	}
+	
 	public void addUtilisateur(accesseursUtilisateur unAccesBD){
 		SQLiteDatabase bdd = accessBDD.getWritableDatabase();
 		String req="INSERT INTO utilisateur(nom,prenom,adresse)" +
