@@ -25,7 +25,7 @@ public class accesBD{
 	public void close() {
 		// Cette ligne permet d'effacer le contenu de la table association.
 		// A utiliser uniquement pour debug.
-		// "TRUNCATE TABLE" n'existe pas sous SQLite (d'où DELETE FROM sans WHERE)
+		// "TRUNCATE TABLE" n'existe pas sous SQLite (d'oÃ¹ DELETE FROM sans WHERE)
 		//bdd.execSQL("DELETE FROM association;");
 		accessBDD.close();
 	}
@@ -52,6 +52,29 @@ public class accesBD{
 	
 		return unAccesBD;
 	}
+
+        public void addDeplacement(classedeplacement unAccesBD){
+		SQLiteDatabase bdd = accessBDD.getWritableDatabase();
+		String req="INSERT INTO deplacement()" +
+				" VALUES('"+unAccesBD.getAssociation()+"'" +
+				", '"+unAccesBD.getDate()+"'"+",'"+unAccesBD.getMotif()+"'"+",'"+unAccesBD.getTitreTrajet()+"'"+",'"+unAccesBD.getNbKm()+"'"+",'"+unAccesBD.getMontantPeage()+"'"+",'"+unAccesBD.getNbRepas()+"'"+",'"+unAccesBD.getNbNuitee()+"');";
+		
+		Log.d("Messages",req);
+		bdd.execSQL(req);
+		bdd.close();
+	}
+
+        public void modifDeplacement(classedeplacement unAccesBD){
+		SQLiteDatabase bdd = accessBDD.getWritableDatabase();
+		String req="UPDATE deplacement()" +
+				" SET('"+unAccesBD.getAssociation()+"'" +
+				", '"+unAccesBD.getDate()+"'"+",'"+unAccesBD.getMotif()+"'"+",'"+unAccesBD.getTitreTrajet()+"'"+",'"+unAccesBD.getNbKm()+"'"+",'"+unAccesBD.getMontantPeage()+"'"+",'"+unAccesBD.getNbRepas()+"'"+",'"+unAccesBD.getNbNuitee()+"');";
+		
+		Log.d("Messages",req);
+		bdd.execSQL(req);
+		bdd.close();
+	}
+	
 	
 	public classedeplacement getDeplacement(long id) {
 		Cursor curseur = accessBDD.getReadableDatabase().rawQuery("SELECT * FROM deplacement WHERE _id = ?", new String[] { String.valueOf(id) });
