@@ -111,16 +111,6 @@
         android:ems="10" />
 
     <EditText
-        android:id="@+id/edtMotif"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtVMotif"
-        android:layout_alignBottom="@+id/txtVMotif"
-        android:layout_alignLeft="@+id/editKmEffectues"
-        android:layout_alignParentRight="true"
-        android:ems="10" />
-
-    <EditText
         android:id="@+id/edtTrajet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,23 +121,13 @@
         android:ems="10" />
 
     <EditText
-        android:id="@+id/edtNbKm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editPeage"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:ems="10"
-        android:inputType="number" />
-
-    <EditText
         android:id="@+id/edtRepas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/txtVNbRepas"
         android:layout_alignBottom="@+id/txtVNbRepas"
-        android:layout_alignLeft="@+id/editText5"
         android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/txtVNbNuitee"
         android:ems="10"
         android:inputType="number" />
 
@@ -157,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/txtVNbNuitee"
         android:layout_alignBottom="@+id/txtVNbNuitee"
-        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignLeft="@+id/edtPeage"
         android:layout_alignParentRight="true"
         android:ems="10"
         android:inputType="number" />
@@ -169,6 +149,7 @@
         android:layout_alignBaseline="@+id/txtVPeage"
         android:layout_alignBottom="@+id/txtVPeage"
         android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/txtVPeage"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -181,5 +162,28 @@
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@+id/txtVNbKm"
         android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtMotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtVMotif"
+        android:layout_alignBottom="@+id/txtVMotif"
+        android:layout_alignLeft="@+id/edtDate"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtNbKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtMotif"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtVNbKm"
+        android:ems="10"
+        android:inputType="number" />
 
 </RelativeLayout>

@@ -5,28 +5,6 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <EditText
-        android:id="@+id/Association"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/Associationtxt"
-        android:layout_alignBottom="@+id/Associationtxt"
-        android:layout_alignParentRight="true"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/Date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/Datetxt"
-        android:layout_alignBottom="@+id/Datetxt"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="date" />
-
-    <EditText
         android:id="@+id/Motif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,15 +49,6 @@
         android:layout_marginTop="26dp"
         android:text="Montant péage" />
 
-    <EditText
-        android:id="@+id/MtPeageNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/MtPeagetxt"
-        android:ems="10"
-        android:inputType="numberDecimal" />
-
     <TextView
         android:id="@+id/NbRepastxt"
         android:layout_width="wrap_content"
@@ -88,24 +57,6 @@
         android:layout_below="@+id/MtPeageNumber"
         android:layout_marginTop="31dp"
         android:text="Nb de repas" />
-
-    <EditText
-        android:id="@+id/NbRepasNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/NbRepastxt"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/NbNuiteNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnEnregistrer"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="number" />
 
     <TextView
         android:id="@+id/NbNuitetxt"
@@ -142,22 +93,72 @@
         android:layout_marginBottom="22dp"
         android:text="Motif" />
 
-    <TextView
-        android:id="@+id/Datetxt"
+    <EditText
+        android:id="@+id/NbNuiteNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Motif"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="14dp"
-        android:text="Date" />
+        android:layout_above="@+id/btnEnregistrer"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/NbRepasNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/NbRepastxt"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/MtPeageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MtPeagetxt"
+        android:layout_alignBottom="@+id/MtPeagetxt"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/Associationtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Date"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="19dp"
+        android:layout_alignBaseline="@+id/Association"
+        android:layout_alignBottom="@+id/Association"
+        android:layout_alignRight="@+id/Intituletrajettxt"
         android:text="Association" />
+
+    <EditText
+        android:id="@+id/Association"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Motif"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/Datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Date"
+        android:layout_alignBottom="@+id/Date"
+        android:layout_alignLeft="@+id/Associationtxt"
+        android:text="Date" />
 
 </RelativeLayout>
