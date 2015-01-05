@@ -54,6 +54,7 @@
         </activity>
         <activity android:name=".passageVueVersHistorique"></activity>
         <activity android:name=".passageHistoriqueaModif"></activity>
+        <activity android:name=".passageVueVersSimulation"></activity>
     </application>
 
 </manifest>

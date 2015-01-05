@@ -38,6 +38,19 @@ public class passageVue extends Activity {
           }
         });
         // FIN HISTORIQUE / MODIFICATION
+        
+     // SIMULATION
+        final Button btnSimuler = (Button) findViewById(R.id.btnSimuler);
+        btnSimuler.setOnClickListener(new View.OnClickListener() {
+        	
+        @Override
+        public void onClick(View v) {
+        	       	
+        	Intent intent = new Intent(passageVue.this, passageVueVersSimulation.class);
+          startActivity(intent);
+          }
+        });
+        // FIN SIMULATION
     }
  
    /* @Override
