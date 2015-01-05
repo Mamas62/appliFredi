@@ -25,6 +25,8 @@ public class MainActivity_historique extends Activity {
 		
 		
 		
+		
+		
 		// Initialisation de la liste d'affichage, mise à jour de son contenu, affichage et paramétrage menu contextuel
 				ListView listViewAssociations = (ListView)findViewById(R.id.listViewAssociations);//récupération de la lite du layout
 				miseAJourListe();
